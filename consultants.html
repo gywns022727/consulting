@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface":"#131b2e","on-secondary":"#ffffff","on-primary-container":"#8abda9","primary":"#003629","on-secondary-fixed":"#002113","tertiary-container":"#004f36","on-tertiary-fixed":"#002114","on-surface-variant":"#404945","on-error-container":"#93000a","tertiary":"#003623","surface-container-low":"#f2f3ff","secondary-fixed-dim":"#4edea3","on-secondary-container":"#00714d","on-primary":"#ffffff","on-primary-fixed":"#002117","background":"#faf8ff","inverse-surface":"#283044","inverse-primary":"#9ed1bd","on-background":"#131b2e","tertiary-fixed-dim":"#45dfa4","primary-fixed-dim":"#9ed1bd","primary-container":"#1b4d3e","surface-tint":"#376757","on-tertiary-container":"#23ca90","secondary-fixed":"#6ffbbe","surface-dim":"#d2d9f4","error":"#ba1a1a","on-tertiary":"#ffffff","surface-variant":"#dae2fd","surface-container":"#eaedff","surface-container-high":"#e2e7ff","primary-fixed":"#baeed9","outline-variant":"#c0c9c3","surface-container-lowest":"#ffffff","error-container":"#ffdad6","surface":"#faf8ff","on-tertiary-fixed-variant":"#005137","on-error":"#ffffff","surface-bright":"#faf8ff","on-secondary-fixed-variant":"#005236","tertiary-fixed":"#68fcbf","secondary-container":"#6cf8bb","outline":"#707974","surface-container-highest":"#dae2fd","on-primary-fixed-variant":"#1d4f40","secondary":"#006c49","inverse-on-surface":"#eef0ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","margin-desktop":"5rem","gutter":"1.5rem","space-lg":"1.5rem","space-2xl":"4rem","margin-tablet":"2.5rem","margin":"1.25rem","space-3xl":"6rem","space-xs":"0.25rem","space-xl":"2.5rem","space-sm":"0.5rem","gutter-desktop":"2rem"},"fontFamily":{"headline-md":["Inter"],"headline-xl-mobile":["Inter"],"label-stat":["Inter"],"label-md":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"display-hero-mobile":["Inter"],"headline-lg":["Inter"],"body-md":["Inter"],"display-hero":["Inter"],"headline-xl":["Inter"],"label-lg":["Inter"],"body-xl":["Inter"],"headline-lg-mobile":["Inter"]},"fontSize":{"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-stat":["40px",{"lineHeight":"48px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"display-hero-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"42px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"display-hero":["64px",{"lineHeight":"76px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-xl":["48px",{"lineHeight":"58px","letterSpacing":"-0.025em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-xl":["18px",{"lineHeight":"30px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg"/>
+  <link rel="alternate icon" href="favicon.ico"/>
+  <link rel="stylesheet" href="style.css"/>
+</head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1360px] mx-auto px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-gutter"><a href="index.html" class="flex items-center gap-2.5 shrink-0 group hover:opacity-90 transition-opacity">
+  <img alt="Nexus Consulting Logo" class="h-9 w-9 object-contain rounded-lg shadow-sm group-hover:scale-105 transition-transform" src="assets/logo.svg"/>
+  <div class="flex flex-col">
+    <span class="font-headline-sm text-lg sm:text-xl font-bold text-primary tracking-tight leading-none">넥서스 컨설팅</span>
+    <span class="text-[10px] font-semibold text-secondary tracking-widest uppercase leading-none mt-1">NEXUS ADVISORY</span>
+  </div>
+</a><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="main" href="index.html">메인</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="company-overview" href="company.html">회사 소개</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="consulting-services" href="services.html">컨설팅 서비스</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="case-studies" href="cases.html">성공 사례</a><a aria-current="page" class="transition-colors py-space-xs text-primary font-bold" data-path="consultants" href="consultants.html">전문가 소개</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="insights" href="insights.html">인사이트</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="contact" href="contact.html">문의 및 신청</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center bg-surface-container p-space-xs rounded-full"><button class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-[0_1px_2px_rgba(0,0,0,0.05)]" type="button">KR</button><button class="px-space-sm py-0.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">EN</button></div><a class="group hidden sm:inline-flex items-center gap-space-xs px-space-md py-space-sm bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-150" data-path="contact" href="contact.html"><span>컨설팅 신청</span><span class="transition-transform duration-150 group-hover:translate-x-1">→</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Introductory Statement & Architectural Context Header -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-tablet lg:px-margin-desktop pt-space-2xl pb-space-xl">
+<div class="flex flex-col gap-space-lg max-w-4xl">
+<!-- Badge Pill -->
+<div class="inline-flex items-center gap-space-xs self-start px-space-md py-1 bg-surface-container rounded-full text-secondary font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="tracking-widest uppercase">WORLD-CLASS ADVISORY NETWORK</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight leading-tight">
+        각 분야 최정상급 전문가들이<br class="hidden sm:inline"/>
+<span class="text-primary font-headline-xl text-headline-xl">최고의 솔루션</span>을 제시합니다.
+      </h1>
+<!-- Subtext Narrative -->
+<p class="font-body-xl text-body-xl text-on-surface-variant max-w-3xl leading-relaxed">
+        글로벌 톱티어 컨설팅 펌, 글로벌 테크 기업, 정부 자문위원 출신의 시니어 파트너들이 직접 프로젝트를 이끌며 실증적이고 지속 가능한 기업 가치 제고를 견인합니다.
+      </p>
+<!-- Key Quick Indicators -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md pt-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">평균 경력</span>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-label-stat text-label-stat text-primary">18+</span>
+<span class="font-label-md text-label-md text-secondary">Years</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">글로벌 파트너십</span>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-label-stat text-label-stat text-primary">40+</span>
+<span class="font-label-md text-label-md text-secondary">Global Hubs</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">자문 성공률</span>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-label-stat text-label-stat text-primary">98.4%</span>
+<span class="font-label-md text-label-md text-secondary">Client Retention</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">누적 딜 볼륨</span>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-label-stat text-label-stat text-primary">12조+</span>
+<span class="font-label-md text-label-md text-secondary">KRW</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Filter Controls Bar -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-tablet lg:px-margin-desktop pb-space-lg">
+<div class="flex flex-wrap items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs flex-wrap" id="advisor-filter-group">
+<button class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md transition-all" data-filter="all" type="button">전체 파트너 (6)</button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" data-filter="strategy" type="button">전략 및 M&A</button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" data-filter="esg" type="button">ESG & 지속가능</button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" data-filter="tech" type="button">디지털 & AI</button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" data-filter="global" type="button">글로벌 & 바이오</button>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+<span>넥서스 검증 시니어 파트너 전원 직강 및 프로젝트 주도</span>
+</div>
+</div>
+</section>
+<!-- Consultants Profiles Grid (3x2 Desktop Layout) -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-tablet lg:px-margin-desktop pb-space-3xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop">
+<!-- Card 1: 한진우 대표 파트너 -->
+<article class="consultant-card group flex flex-col justify-between bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="strategy">
+<div>
+<!-- Photo & Strategic Badge Stack -->
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Distinguished executive Korean male partner in his early 50s wearing a tailored charcoal suit and silk tie, sitting in a luminous minimalist corporate boardroom with deep green accents and architectural glass walls, subtle natural rim lighting, confident authoritative expression, editorial corporate portrait photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC0CgUlMGA505gilOMiw3aeaa8vv8wNlOntIK4NgvZcZUCoYlKO-SeojaCUx6q_3B7g9pp6dkm5cFG2kitqkIVcj3a3wMiPc6ZpeFWFa9PMxjcmJgZbR6sVnxyNXzIiESCBGhAKNejknEBgwdDXLjKGbse5EyIjSUwWjFy3nGqSIuhFRMndtAjbYJi4ti136XZ3DZ6TTOmRD6HJfHJ7hKCvTI4z5h9uMHUcIcNX9M9J4LjEcVgfVA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute top-space-md left-space-md flex flex-col gap-1 items-start">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm">대표 파트너</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-md text-label-md">경력 22년</span>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-end justify-between">
+<div>
+<p class="font-label-md text-label-md text-secondary-fixed">Managing Partner</p>
+<h2 class="font-headline-md text-headline-md text-on-primary font-bold tracking-tight">한진우</h2>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/20 backdrop-blur-md flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">corporate_fare</span>
+</div>
+</div>
+</div>
+<!-- Metadata & Profile Details -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase font-semibold">전문 분야</span>
+<p class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">경영 전략 · 크로스보더 M&A · 기업 가치 극대화</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">주요 이력</span>
+<ul class="flex flex-col gap-1 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>서울대학교 경영학 학사 / Wharton MBA</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>前 맥킨지 & 컴퍼니 시니어 파트너 (20+ 년)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>대형 그룹사 지주사 지배구조 개편 15건 총괄</span>
+</li>
+</ul>
+</div>
+<!-- Quote Statement -->
+<div class="pt-space-xs">
+<p class="font-body-md text-body-md text-primary italic leading-relaxed bg-surface-container-low/60 p-space-sm rounded-lg">
+                “기업의 구조적 문제 해결과 장기적 주주 가치 창출을 최우선으로 합니다.”
+              </p>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-space-lg pb-space-lg pt-space-xs flex items-center justify-between gap-space-sm">
+<a class="h-10 px-space-md flex items-center justify-center gap-space-xs bg-surface-container rounded-lg text-on-surface hover:bg-surface-variant transition-colors font-label-md text-label-md" href="mailto:jwhan@nexusconsulting.kr" title="이메일 문의">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>이메일</span>
+</a>
+<a class="h-10 flex-1 flex items-center justify-center gap-space-xs bg-primary text-on-primary rounded-lg hover:bg-primary-container transition-all font-label-md text-label-md group/btn" data-path="contact" href="contact.html">
+<span>상담 신청하기</span>
+<span class="transition-transform duration-150 group-hover/btn:translate-x-1">→</span>
+</a>
+</div>
+</article>
+<!-- Card 2: 서지연 시니어 파트너 -->
+<article class="consultant-card group flex flex-col justify-between bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="esg">
+<div>
+<!-- Photo & Badges -->
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Refined Korean female corporate senior partner in her mid 40s in an elegant emerald green blazer, holding analytical documents in an airy, sun-drenched architectural atrium with lush vertical garden backdrop, calm executive intelligence, daylight high dynamic range portrait photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCOQBA5uGInSBcCS1Wyd3UD8Ul17wlcS0n0OmoKVcczmjOLK0JECLS4zGJyBfEwotpSb82sXi6SbQhvQiTFUe0wZxcsPZlDhE8RKcRNCh2wXkMUY6PFiuznryd18aPqQ_fXBp_Kre_NhSL_rlW-bPGMDCJNPRAqqMMiCXWhvoXxvIju5w1oN96jfXNiK3hdZZcSswZreMm3lmh4f5KFG989T2gfIiXkuv-77QlaNfJrqIz3GFEIhY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute top-space-md left-space-md flex flex-col gap-1 items-start">
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-container text-on-primary font-label-md text-label-md shadow-sm">시니어 파트너</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-md text-label-md">ESG 최고위원</span>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-end justify-between">
+<div>
+<p class="font-label-md text-label-md text-secondary-fixed">Senior Partner</p>
+<h2 class="font-headline-md text-headline-md text-on-primary font-bold tracking-tight">서지연</h2>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/20 backdrop-blur-md flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">eco</span>
+</div>
+</div>
+</div>
+<!-- Metadata & Details -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase font-semibold">전문 분야</span>
+<p class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">ESG 경영 체계 구축 · 기후 테크 · 지속가능 금융</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">주요 이력</span>
+<ul class="flex flex-col gap-1 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>카이스트 산업공학 / Columbia 환경정책학 석사</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>前 글로벌 기후기금(GCF) 수석 전략자문역</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>국내 10대 그룹 탄소중립 로드맵 및 ISSB 프레임워크 설계</span>
+</li>
+</ul>
+</div>
+<!-- Quote Statement -->
+<div class="pt-space-xs">
+<p class="font-body-md text-body-md text-primary italic leading-relaxed bg-surface-container-low/60 p-space-sm rounded-lg">
+                “규제를 기회로 바꾸는 현실적인 탄소중립 로드맵을 설계합니다.”
+              </p>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-space-lg pb-space-lg pt-space-xs flex items-center justify-between gap-space-sm">
+<a class="h-10 px-space-md flex items-center justify-center gap-space-xs bg-surface-container rounded-lg text-on-surface hover:bg-surface-variant transition-colors font-label-md text-label-md" href="mailto:jyseo@nexusconsulting.kr" title="이메일 문의">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>이메일</span>
+</a>
+<a class="h-10 flex-1 flex items-center justify-center gap-space-xs bg-primary text-on-primary rounded-lg hover:bg-primary-container transition-all font-label-md text-label-md group/btn" data-path="contact" href="contact.html">
+<span>상담 신청하기</span>
+<span class="transition-transform duration-150 group-hover/btn:translate-x-1">→</span>
+</a>
+</div>
+</article>
+<!-- Card 3: 최민성 파트너 -->
+<article class="consultant-card group flex flex-col justify-between bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="tech">
+<div>
+<!-- Photo & Badges -->
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Visionary Asian male tech partner in his early 40s wearing a modern minimal dark navy crewneck sweater with smart glasses, sitting in an ultra-modern tech laboratory office with abstract data visualization screens in soft green glow, cinematic ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAzNo2fcgx1izMO3N20PUt0ARoLzr5yPXNHFWrRlwuFoAjzvOZReLXVAYFoPb-ziGvmwGfPZ1ttSk6_NeWJJ3uFDVg5x3a6-QFOkAbXAVbqRvLKko40g_Ga8fJAm-KpdIkY1PUCojBOgqd3RCYHEz-ySbCDRXksZv63nYcOdjRh-T3izBlwoXw2AOP_JJV_JHxiSmtc8pI4IOPCxTdxSXw6UdbovcX55CJ9SfEtN_jrwHYleTY7QI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute top-space-md left-space-md flex flex-col gap-1 items-start">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary text-on-primary font-label-md text-label-md shadow-sm">파트너</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-md text-label-md">AI / DX 총괄</span>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-end justify-between">
+<div>
+<p class="font-label-md text-label-md text-secondary-fixed">Partner / Chief DX Strategist</p>
+<h2 class="font-headline-md text-headline-md text-on-primary font-bold tracking-tight">최민성</h2>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/20 backdrop-blur-md flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">memory</span>
+</div>
+</div>
+</div>
+<!-- Metadata & Details -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase font-semibold">전문 분야</span>
+<p class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">디지털 전환(DX) · Enterprise AI · 빅데이터 인프라</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">주요 이력</span>
+<ul class="flex flex-col gap-1 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>Stanford University 전산학 박사 (CS Ph.D.)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>前 실리콘밸리 유니콘 테크 기업 VP of Engineering</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>제조 및 금융권 LLM 기반 업무 자동화 시스템 30+ 구축</span>
+</li>
+</ul>
+</div>
+<!-- Quote Statement -->
+<div class="pt-space-xs">
+<p class="font-body-md text-body-md text-primary italic leading-relaxed bg-surface-container-low/60 p-space-sm rounded-lg">
+                “기술을 비즈니스 언어로 번역하여 실질적인 운영 혁신을 만듭니다.”
+              </p>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-space-lg pb-space-lg pt-space-xs flex items-center justify-between gap-space-sm">
+<a class="h-10 px-space-md flex items-center justify-center gap-space-xs bg-surface-container rounded-lg text-on-surface hover:bg-surface-variant transition-colors font-label-md text-label-md" href="mailto:mschoi@nexusconsulting.kr" title="이메일 문의">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>이메일</span>
+</a>
+<a class="h-10 flex-1 flex items-center justify-center gap-space-xs bg-primary text-on-primary rounded-lg hover:bg-primary-container transition-all font-label-md text-label-md group/btn" data-path="contact" href="contact.html">
+<span>상담 신청하기</span>
+<span class="transition-transform duration-150 group-hover/btn:translate-x-1">→</span>
+</a>
+</div>
+</article>
+<!-- Card 4: 이수진 이사 -->
+<article class="consultant-card group flex flex-col justify-between bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="global">
+<div>
+<!-- Photo & Badges -->
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Polished Korean female corporate director in her late 30s dressed in a tailored cream-toned suit jacket, seated in an elegant modern clinical biotechnology conference room with clean architectural glass and subtle forest green branding accents, poised confident posture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwb6o7hA6yEooxGdsdTVb7T0V-p1vcryxUq6m6NgNp582vit0Mb3_-N53gcrAoL_bXfimwuZtxGw1bmfrFAUPtIyUOAcG31wsx0c22mk3kiahlYsvypzu35RgftvQg4wBEPcxn2Uxy6AhPESvISYtOGaToMBDcRbKL4cS4ClZ5s1J1rkRN3a3rvDxRdngn0HA3YKV6CdN9_ztHTN_KQ3m9By22hTo3BXmtA4j6RAmfz0qcyfRsaW4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute top-space-md left-space-md flex flex-col gap-1 items-start">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md shadow-sm">이사 (Director)</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-md text-label-md">바이오 전략</span>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-end justify-between">
+<div>
+<p class="font-label-md text-label-md text-secondary-fixed">Director</p>
+<h2 class="font-headline-md text-headline-md text-on-primary font-bold tracking-tight">이수진</h2>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/20 backdrop-blur-md flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">vaccines</span>
+</div>
+</div>
+</div>
+<!-- Metadata & Details -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase font-semibold">전문 분야</span>
+<p class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">헬스케어 & 바이오 신사업 · 글로벌 FDA/KFDA 규제 대응</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">주요 이력</span>
+<ul class="flex flex-col gap-1 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>연세대학교 약학대학 학사 및 약학 석사</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>前 글로벌 다국적 제약사 전략기획실 실장</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>신약 파이프라인 글로벌 기술이전(L/O) 자문 8건 성사</span>
+</li>
+</ul>
+</div>
+<!-- Quote Statement -->
+<div class="pt-space-xs">
+<p class="font-body-md text-body-md text-primary italic leading-relaxed bg-surface-container-low/60 p-space-sm rounded-lg">
+                “엄격한 규제 환경 속에서도 차세대 파이프라인의 사업화를 견인합니다.”
+              </p>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-space-lg pb-space-lg pt-space-xs flex items-center justify-between gap-space-sm">
+<a class="h-10 px-space-md flex items-center justify-center gap-space-xs bg-surface-container rounded-lg text-on-surface hover:bg-surface-variant transition-colors font-label-md text-label-md" href="mailto:sjlee@nexusconsulting.kr" title="이메일 문의">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>이메일</span>
+</a>
+<a class="h-10 flex-1 flex items-center justify-center gap-space-xs bg-primary text-on-primary rounded-lg hover:bg-primary-container transition-all font-label-md text-label-md group/btn" data-path="contact" href="contact.html">
+<span>상담 신청하기</span>
+<span class="transition-transform duration-150 group-hover/btn:translate-x-1">→</span>
+</a>
+</div>
+</article>
+<!-- Card 5: 데이비드 강 파트너 -->
+<article class="consultant-card group flex flex-col justify-between bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="strategy">
+<div>
+<!-- Photo & Badges -->
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sharp Korean-American male legal and financial partner in his late 40s in a pinstripe navy suit, photographed against a panoramic high-rise skyline of financial district skyscrapers, crisp modern executive leadership vibe with warm sunset accents, professional magazine profile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuAwprmppc0E_t9WnkFgKzQwWrb05OYLeOhqpWv0I3PO57I7Idj9ITui3fetfEau8kLj_7PvlFMxJMJ37Zqw-w86fKcbbt8g2WQWZ90PHUoflT474cLeHJqiAnK8d_okXAC7Us0alVcqi0IeZOG4NceGES2cSxSgTXV_6kZwvhblIcItpTwCLPN8Wjud_xdsWehYFbctZ2L2rlLaWlYiMYyXjJssnMZKXKcdhAdsS9OwGkCxu25IY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute top-space-md left-space-md flex flex-col gap-1 items-start">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary text-on-primary font-label-md text-label-md shadow-sm">파트너 (US 변호사)</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-md text-label-md">크로스보더</span>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-end justify-between">
+<div>
+<p class="font-label-md text-label-md text-secondary-fixed">Partner / Head of Cross-border</p>
+<h2 class="font-headline-md text-headline-md text-on-primary font-bold tracking-tight">데이비드 강</h2>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/20 backdrop-blur-md flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</div>
+</div>
+</div>
+<!-- Metadata & Details -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase font-semibold">전문 분야</span>
+<p class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">글로벌 시장 진출 · 크로스보더 M&A · 국제 법률 및 리스크 관리</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">주요 이력</span>
+<ul class="flex flex-col gap-1 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>Harvard Law School (Juris Doctor, J.D.)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>前 뉴욕 월스트리트 투자은행(IB) 아태지역 총괄</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>북미 및 유럽 시장 진출 다국적 딜 자문 35건+</span>
+</li>
+</ul>
+</div>
+<!-- Quote Statement -->
+<div class="pt-space-xs">
+<p class="font-body-md text-body-md text-primary italic leading-relaxed bg-surface-container-low/60 p-space-sm rounded-lg">
+                “국경을 넘는 비즈니스 확장과 리스크 매니지먼트의 스페셜리스트.”
+              </p>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-space-lg pb-space-lg pt-space-xs flex items-center justify-between gap-space-sm">
+<a class="h-10 px-space-md flex items-center justify-center gap-space-xs bg-surface-container rounded-lg text-on-surface hover:bg-surface-variant transition-colors font-label-md text-label-md" href="mailto:davidkang@nexusconsulting.kr" title="이메일 문의">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>이메일</span>
+</a>
+<a class="h-10 flex-1 flex items-center justify-center gap-space-xs bg-primary text-on-primary rounded-lg hover:bg-primary-container transition-all font-label-md text-label-md group/btn" data-path="contact" href="contact.html">
+<span>상담 신청하기</span>
+<span class="transition-transform duration-150 group-hover/btn:translate-x-1">→</span>
+</a>
+</div>
+</article>
+<!-- Card 6: 정윤아 수석 컨설턴트 -->
+<article class="consultant-card group flex flex-col justify-between bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="strategy">
+<div>
+<!-- Photo & Badges -->
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Intelligent and engaging Korean female lead consultant in her mid-30s with professional warm smile, wearing a modern sage green blazer, seated in a warm timber and glass collaborative office environment with structured organizational charts on white glass boards, authentic documentary business lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTSA2sXJ1Q8P4P25H-aNQDIp6B-WKWKn9HaWzMt8dmPOeYE2_tTuwJpa-Q2XhuT4-d2mSl35n76fzZfGe9hQPCL2UKh7zgAqK1ln1nqMYaBBXes-90U7KQ0jFwbiuTqPcZw3v1MLl41gECYJr3RulZNLzNMYK7isV_BYm1mEapQQN-JEKtZeeH8ObNFwAFZ5pM1f5IWpU2bPApMHl4SwSYaZTs88VX-CX4_UXYH2l8a4wUxnnZvAs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute top-space-md left-space-md flex flex-col gap-1 items-start">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md shadow-sm">수석 컨설턴트</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-md text-label-md">체인지 매니지먼트</span>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-end justify-between">
+<div>
+<p class="font-label-md text-label-md text-secondary-fixed">Lead Consultant / HR Practice</p>
+<h2 class="font-headline-md text-headline-md text-on-primary font-bold tracking-tight">정윤아</h2>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/20 backdrop-blur-md flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+</div>
+</div>
+<!-- Metadata & Details -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase font-semibold">전문 분야</span>
+<p class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">조직 문화 혁신 · HR 평가 보상 체계 개편 · 변화 관리(Change Mgmt)</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">주요 이력</span>
+<ul class="flex flex-col gap-1 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>고려대학교 심리학 석사 (조직심리학 전공)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>다수 국내 10대 대기업 인사평가 및 승진 프레임워크 리드</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span>합병 후 조직 통합(PMI) 및 컬처 리엔지니어링 프로젝트 전담</span>
+</li>
+</ul>
+</div>
+<!-- Quote Statement -->
+<div class="pt-space-xs">
+<p class="font-body-md text-body-md text-primary italic leading-relaxed bg-surface-container-low/60 p-space-sm rounded-lg">
+                “모든 전략의 완성은 사람과 조직의 자발적 변화에서 비롯됩니다.”
+              </p>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-space-lg pb-space-lg pt-space-xs flex items-center justify-between gap-space-sm">
+<a class="h-10 px-space-md flex items-center justify-center gap-space-xs bg-surface-container rounded-lg text-on-surface hover:bg-surface-variant transition-colors font-label-md text-label-md" href="mailto:yajung@nexusconsulting.kr" title="이메일 문의">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>이메일</span>
+</a>
+<a class="h-10 flex-1 flex items-center justify-center gap-space-xs bg-primary text-on-primary rounded-lg hover:bg-primary-container transition-all font-label-md text-label-md group/btn" data-path="contact" href="contact.html">
+<span>상담 신청하기</span>
+<span class="transition-transform duration-150 group-hover/btn:translate-x-1">→</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Special Advisory Network Recruitment / Partnership Callout Banner -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-tablet lg:px-margin-desktop pb-space-3xl">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-primary via-primary-container to-tertiary text-on-primary p-space-xl lg:p-space-2xl shadow-xl flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+<!-- Architectural Decorative Shapes in Background -->
+<div class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full bg-secondary-fixed/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -top-12 w-64 h-64 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none"></div>
+<!-- Text Narrative -->
+<div class="flex flex-col gap-space-sm max-w-2xl relative z-10">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-secondary-fixed self-start font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">handshake</span>
+<span>FELLOW & ADVISOR NETWORK</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary font-bold tracking-tight">
+          전문가로서 넥서스 컨설팅과 함께하고 싶으신가요?
+        </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim leading-relaxed">
+          프로젝트별 전문위원, 산업 자문 펠로우 및 상근 시니어 컨설턴트를 상시 모시고 있습니다. 최고 권위의 지적 커뮤니티와 강력한 보상 체계로 귀하의 지견을 기업의 혁신 동력으로 완성합니다.
+        </p>
+</div>
+<!-- Action Button Group -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md shrink-0 w-full lg:w-auto relative z-10">
+<a class="w-full sm:w-auto px-space-xl py-space-md bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary font-label-lg text-label-lg font-bold rounded-lg transition-all duration-200 flex items-center justify-center gap-space-sm shadow-md group" data-path="contact" href="contact.html">
+<span>전문가 파트너 등록 신청하기</span>
+<span class="transition-transform duration-150 group-hover:translate-x-1">→</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Interactive Client-Side Filter Functionality -->
+<script>
+    (function() {
+      const filterButtons = document.querySelectorAll('#advisor-filter-group button');
+      const cards = document.querySelectorAll('.consultant-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filterValue = btn.getAttribute('data-filter');
+
+          // Toggle Button Active Styles
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+          btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+          btn.classList.add('bg-primary', 'text-on-primary');
+
+          // Filter Profiles Cards
+          cards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            if (filterValue === 'all' || category === filterValue) {
+              card.style.display = 'flex';
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-primary text-on-primary"><div class="max-w-[1360px] mx-auto px-margin-tablet lg:px-margin-desktop pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop mb-space-3xl"><div class="flex flex-col gap-space-md"><a href="index.html" class="flex items-center gap-2.5 shrink-0 group hover:opacity-90 transition-opacity">
+  <img alt="Nexus Consulting Logo" class="h-9 w-9 object-contain rounded-lg shadow-sm border border-secondary-fixed/30 group-hover:scale-105 transition-transform" src="assets/logo.svg"/>
+  <div class="flex flex-col">
+    <span class="font-headline-sm text-lg sm:text-xl font-bold text-on-primary tracking-tight leading-none">넥서스 컨설팅</span>
+    <span class="text-[10px] font-semibold text-secondary-fixed tracking-widest uppercase leading-none mt-1">NEXUS ADVISORY</span>
+  </div>
+</a><p class="font-body-md text-body-md text-primary-fixed-dim leading-relaxed">데이터와 전략으로 기업의 지속 가능한 미래를 완성합니다.</p><div class="pt-space-sm"><span class="inline-block px-space-sm py-space-xs rounded-full bg-tertiary-container text-on-tertiary-container font-label-md text-label-md">Strategic Advisory Firm</span></div></div><div class="flex flex-col gap-space-md"><span class="font-label-lg text-label-lg text-secondary-fixed uppercase tracking-wider">서비스</span><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-primary-fixed-dim"><li><a class="hover:text-on-primary transition-colors" data-path="consulting-services" href="services.html">경영 전략</a></li><li><a class="hover:text-on-primary transition-colors" data-path="consulting-services" href="services.html">디지털 전환(DX)</a></li><li><a class="hover:text-on-primary transition-colors" data-path="consulting-services" href="services.html">ESG / 지속가능경영</a></li><li><a class="hover:text-on-primary transition-colors" data-path="consulting-services" href="services.html">재무 & M&A 자문</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-label-lg text-label-lg text-secondary-fixed uppercase tracking-wider">바로가기</span><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-primary-fixed-dim"><li><a class="hover:text-on-primary transition-colors" data-path="company-overview" href="company.html">회사 소개</a></li><li><a class="hover:text-on-primary transition-colors" data-path="case-studies" href="cases.html">성공 사례</a></li><li><a class="hover:text-on-primary transition-colors" data-path="consultants" href="consultants.html">전문가 네트워크</a></li><li><a class="hover:text-on-primary transition-colors" data-path="insights" href="insights.html">최신 인사이트 리포트</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-label-lg text-label-lg text-secondary-fixed uppercase tracking-wider">문의 및 위치</span><div class="flex flex-col gap-space-xs font-body-md text-body-md text-primary-fixed-dim"><p><span class="text-on-primary font-label-md">대표 연락처:</span> 02-588-3920</p><p><span class="text-on-primary font-label-md">이메일:</span> contact@nexusconsulting.kr</p><p class="mt-space-xs leading-relaxed"><span class="text-on-primary font-label-md">위치:</span> 서울특별시 강남구 테헤란로 425 넥서스타워 18층</p></div></div></div><div class="pt-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-md text-primary-fixed-dim font-body-md text-body-md"><div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs font-label-md text-label-md"><a class="hover:text-on-primary transition-colors" data-path="privacy" href="#">개인정보 처리방침</a><span>|</span><a class="hover:text-on-primary transition-colors" data-path="terms" href="#">이용약관</a><span>|</span><a class="hover:text-on-primary transition-colors" data-path="ethics" href="#">윤리경영 강령</a></div><div class="flex items-center gap-space-md"><span class="font-body-md text-body-md">© 2025 Nexus Consulting Group. All Rights Reserved.</span><div class="flex items-center gap-space-xs font-label-md text-label-md"><button class="text-secondary-fixed hover:text-on-primary font-bold transition-colors" type="button">KR</button><span>/</span><button class="text-primary-fixed-dim hover:text-on-primary transition-colors" type="button">EN</button></div></div></div></div></footer>
+  <script src="main.js"></script>
+</body></html>

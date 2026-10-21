@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface":"#131b2e","on-secondary":"#ffffff","on-primary-container":"#8abda9","primary":"#003629","on-secondary-fixed":"#002113","tertiary-container":"#004f36","on-tertiary-fixed":"#002114","on-surface-variant":"#404945","on-error-container":"#93000a","tertiary":"#003623","surface-container-low":"#f2f3ff","secondary-fixed-dim":"#4edea3","on-secondary-container":"#00714d","on-primary":"#ffffff","on-primary-fixed":"#002117","background":"#faf8ff","inverse-surface":"#283044","inverse-primary":"#9ed1bd","on-background":"#131b2e","tertiary-fixed-dim":"#45dfa4","primary-fixed-dim":"#9ed1bd","primary-container":"#1b4d3e","surface-tint":"#376757","on-tertiary-container":"#23ca90","secondary-fixed":"#6ffbbe","surface-dim":"#d2d9f4","error":"#ba1a1a","on-tertiary":"#ffffff","surface-variant":"#dae2fd","surface-container":"#eaedff","surface-container-high":"#e2e7ff","primary-fixed":"#baeed9","outline-variant":"#c0c9c3","surface-container-lowest":"#ffffff","error-container":"#ffdad6","surface":"#faf8ff","on-tertiary-fixed-variant":"#005137","on-error":"#ffffff","surface-bright":"#faf8ff","on-secondary-fixed-variant":"#005236","tertiary-fixed":"#68fcbf","secondary-container":"#6cf8bb","outline":"#707974","surface-container-highest":"#dae2fd","on-primary-fixed-variant":"#1d4f40","secondary":"#006c49","inverse-on-surface":"#eef0ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","margin-desktop":"5rem","gutter":"1.5rem","space-lg":"1.5rem","space-2xl":"4rem","margin-tablet":"2.5rem","margin":"1.25rem","space-3xl":"6rem","space-xs":"0.25rem","space-xl":"2.5rem","space-sm":"0.5rem","gutter-desktop":"2rem"},"fontFamily":{"headline-md":["Inter"],"headline-xl-mobile":["Inter"],"label-stat":["Inter"],"label-md":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"display-hero-mobile":["Inter"],"headline-lg":["Inter"],"body-md":["Inter"],"display-hero":["Inter"],"headline-xl":["Inter"],"label-lg":["Inter"],"body-xl":["Inter"],"headline-lg-mobile":["Inter"]},"fontSize":{"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-stat":["40px",{"lineHeight":"48px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"display-hero-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"42px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"display-hero":["64px",{"lineHeight":"76px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-xl":["48px",{"lineHeight":"58px","letterSpacing":"-0.025em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-xl":["18px",{"lineHeight":"30px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg"/>
+  <link rel="alternate icon" href="favicon.ico"/>
+  <link rel="stylesheet" href="style.css"/>
+</head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1360px] mx-auto px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-gutter"><a href="index.html" class="flex items-center gap-2.5 shrink-0 group hover:opacity-90 transition-opacity">
+  <img alt="Nexus Consulting Logo" class="h-9 w-9 object-contain rounded-lg shadow-sm group-hover:scale-105 transition-transform" src="assets/logo.svg"/>
+  <div class="flex flex-col">
+    <span class="font-headline-sm text-lg sm:text-xl font-bold text-primary tracking-tight leading-none">넥서스 컨설팅</span>
+    <span class="text-[10px] font-semibold text-secondary tracking-widest uppercase leading-none mt-1">NEXUS ADVISORY</span>
+  </div>
+</a><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="main" href="index.html">메인</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="company-overview" href="company.html">회사 소개</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="consulting-services" href="services.html">컨설팅 서비스</a><a aria-current="page" class="transition-colors py-space-xs text-primary font-bold" data-path="case-studies" href="cases.html">성공 사례</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="consultants" href="consultants.html">전문가 소개</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="insights" href="insights.html">인사이트</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="contact" href="contact.html">문의 및 신청</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center bg-surface-container p-space-xs rounded-full"><button class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-[0_1px_2px_rgba(0,0,0,0.05)]" type="button">KR</button><button class="px-space-sm py-0.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">EN</button></div><a class="group hidden sm:inline-flex items-center gap-space-xs px-space-md py-space-sm bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-150" data-path="contact" href="contact.html"><span>컨설팅 신청</span><span class="transition-transform duration-150 group-hover:translate-x-1">→</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Macro Section: Header & Lead Context -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-tablet lg:px-margin-desktop pt-space-xl pb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="flex flex-col max-w-3xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-secondary-fixed/20 text-on-secondary-container w-fit mb-space-md">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md tracking-wider uppercase">Proven Track Record</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mb-space-sm">
+          검증된 결과로 증명하는 넥서스의 차별화된 컨설팅 파워
+        </h1>
+<p class="font-body-xl text-body-xl text-on-surface-variant max-w-2xl leading-relaxed">
+          다양한 산업군에서 실질적인 비즈니스 임팩트를 창출한 프로젝트 사례를 공개합니다. 측정 가능한 수치와 전략적 로드맵으로 기업의 전환점을 제시합니다.
+        </p>
+</div>
+<!-- Quick Executive Stat Bar -->
+<div class="flex items-center gap-space-xl bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_3px_0_rgba(15,23,42,0.04)] shrink-0">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">누적 프로젝트 성공률</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-label-stat text-label-stat text-primary">98.4%</span>
+<span class="font-label-md text-label-md text-secondary font-bold">Top Tier</span>
+</div>
+</div>
+<div class="w-px h-10 bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">창출 고객사 총 부가가치</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-label-stat text-label-stat text-primary">2.4조+</span>
+<span class="font-label-md text-label-md text-secondary font-bold">KRW</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Segmented Filter Bar -->
+<div class="mt-space-2xl flex flex-wrap items-center justify-between gap-space-md pb-space-xs">
+<div class="inline-flex items-center p-1 bg-surface-container rounded-full" id="filter-container">
+<button class="filter-tab px-space-md py-space-xs rounded-full font-label-lg text-label-lg transition-all duration-150 bg-surface-container-lowest text-on-surface shadow-[0_1px_3px_rgba(15,23,42,0.08)]" data-filter="all" type="button">
+          전체 (Active)
+        </button>
+<button class="filter-tab px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all duration-150" data-filter="strategy" type="button">
+          경영 전략
+        </button>
+<button class="filter-tab px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all duration-150" data-filter="dx" type="button">
+          디지털 전환 (DX)
+        </button>
+<button class="filter-tab px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all duration-150" data-filter="esg" type="button">
+          ESG 지속가능경영
+        </button>
+<button class="filter-tab px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all duration-150" data-filter="industry" type="button">
+          제조·IT·금융
+        </button>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>공인 성과 지표 검증 데이터 기반 (FY2023-2024)</span>
+</div>
+</div>
+</section>
+<!-- Macro Section: Spotlight Featured Case -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-tablet lg:px-margin-desktop py-space-lg">
+<div class="relative bg-surface-container-lowest rounded-xl shadow-[0_10px_25px_-5px_rgba(27,77,62,0.06),0_8px_10px_-6px_rgba(15,23,42,0.04)] overflow-hidden">
+<!-- Deep Forest Top Highlight bar -->
+<div class="h-1.5 w-full bg-gradient-to-r from-primary via-primary-container to-secondary"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop p-space-xl lg:p-space-2xl">
+<!-- Left: Context & Transformation Narrative -->
+<div class="lg:col-span-7 flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary-container/50 text-on-secondary-container font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+                SPOTLIGHT CASE | 디지털 전환
+              </span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md">
+                스마트 제조 솔루션
+              </span>
+<span class="text-outline font-label-md text-label-md">프로젝트 기간: 14개월</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-space-md leading-tight">
+              글로벌 2차전지 제조사 스마트팩토리 및 AI 공급망 구축 프로젝트
+            </h2>
+<div class="space-y-space-md my-space-lg">
+<div class="flex items-start gap-space-md p-space-md rounded-lg bg-surface-container-low">
+<div class="w-8 h-8 rounded bg-primary-container text-on-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">corporate_fare</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider block">고객사 프로필</span>
+<p class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">
+                    연매출 2조 원 규모 글로벌 배터리 부품사 A사 (북미·유럽·한국 생산기지 7개소 운영)
+                  </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-[0_1px_3px_0_rgba(15,23,42,0.04)]">
+<div class="flex items-center gap-space-xs text-error mb-1">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span class="font-label-md text-label-md font-semibold">핵심 당면 과제</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    급증하는 해외 완성차 OEM 주문량 대비 공정 병목 현상 발생 및 수급 불안정에 따른 원자재 재고 손실률 지속 증가.
+                  </p>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-[0_1px_3px_0_rgba(15,23,42,0.04)]">
+<div class="flex items-center gap-space-xs text-secondary mb-1">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+<span class="font-label-md text-label-md font-semibold">넥서스 컨설팅 솔루션</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    실시간 IoT 센서 데이터 기반 AI 공정 최적화 알고리즘 도입 및 글로벌 다거점 통합 엔드투엔드 SCM 재구축.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-md">
+<a class="group inline-flex items-center gap-space-xs px-space-lg py-space-sm bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-150" href="#">
+<span>상세 분석 보고서 열람</span>
+<span class="transition-transform duration-150 group-hover:translate-x-1">→</span>
+</a>
+<span class="font-body-md text-body-md text-outline">담당 파트너: 이상훈 수석 디렉터 (DX 실)</span>
+</div>
+</div>
+<!-- Right: Photographic Visual & Data Chart Stack -->
+<div class="lg:col-span-5 flex flex-col gap-space-md justify-between">
+<!-- Rich Photography Container with Scrim -->
+<div class="relative w-full h-56 rounded-lg overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Modern high-tech battery automated manufacturing plant with robotic arms and digital engineering monitors showing data analytics. Subtle ambient mint green lighting accents with deep forest green architectural structures, ultra high resolution photography with crisp details and minimalist high-trust atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuIhSAi0rKP3zEjW4XhlSZcXhtlWUt-PmzHPABZt1HJLyaI5VkbE3qGMWn_d11GDW4lhv2es2B_IomxTG-9dxohjaT_5eAvSe6fL1KfvuAOaf3hI_R5DOvA-D_hZTPUL1Y559cOP3vIpIkwhxOPFM2pbCZUW-fauW_1jEjNJgCNNIiCCRVXhnyoU4FziY9u9nxgURaVfo_C1qRHIYjEKRgQwSZxmFgrbxNilmSJ--Icwgb3ZFU6Fo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex items-end p-space-md">
+<span class="font-label-md text-label-md text-on-primary font-medium tracking-wide">
+                스마트 공정 시뮬레이션 및 데이터 허브 가동 현장
+              </span>
+</div>
+</div>
+<!-- Final Key Performance Indicators (3 Metric Blocks) -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs">
+<div class="p-space-md bg-surface-container-low rounded-lg text-center flex flex-col items-center justify-center">
+<span class="font-label-md text-label-md text-on-surface-variant block mb-1">공정 효율성</span>
+<span class="font-label-stat text-label-stat text-primary">+35%</span>
+<span class="mt-1 inline-flex items-center text-secondary font-label-md text-label-md font-bold">
+                ▲ 생산성 극대화
+              </span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg text-center flex flex-col items-center justify-center">
+<span class="font-label-md text-label-md text-on-surface-variant block mb-1">재고 회전 주기</span>
+<span class="font-label-stat text-label-stat text-primary">22일</span>
+<span class="mt-1 inline-flex items-center text-secondary font-label-md text-label-md font-bold">
+                ▼ 45일에서 단축
+              </span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg text-center flex flex-col items-center justify-center">
+<span class="font-label-md text-label-md text-on-surface-variant block mb-1">연간 원가 절감</span>
+<span class="font-label-stat text-label-stat text-primary">180억</span>
+<span class="mt-1 inline-flex items-center text-secondary font-label-md text-label-md font-bold">
+                KRW 절감 달성
+              </span>
+</div>
+</div>
+<!-- Micro Analytics SVG Mini Chart inside Card -->
+<div class="bg-primary/5 rounded-lg p-space-sm px-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">analytics</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">설비 가동 이상 감지 정확도 추이</span>
+</div>
+<!-- Lightweight SVG Sparkline -->
+<svg class="w-32 h-7 text-secondary" fill="none" viewbox="0 0 128 28" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 24L24 19L46 22L68 12L90 14L112 5L126 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<circle cx="126" cy="3" fill="currentColor" r="2.5"></circle>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Macro Section: 3x2 Case Studies Grid -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-tablet lg:px-margin-desktop py-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<span class="font-label-lg text-label-lg text-secondary uppercase tracking-wider block mb-1">Case Portfolio</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">분야별 전략 혁신 성공 포트폴리오</h3>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant">총 128건 중 엄선된 전략 대표 사례 6건</span>
+</div>
+<!-- The 6 Case Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop" id="cases-grid">
+<!-- Card 1: 경영 전략 -->
+<div class="case-card flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-[0_1px_3px_0_rgba(15,23,42,0.04)] hover:shadow-[0_10px_25px_-5px_rgba(27,77,62,0.06)] transition-all duration-200 group" data-category="strategy">
+<div>
+<div class="relative w-full h-44 rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Asian logistics and high-speed fulfillment hub with illuminated shipping routes and digital displays in Singapore and Jakarta. Crisp clean overhead composition with deep emerald greens and architectural lighting, professional business magazine aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAmq4Nm9HG8uNpHbimoKuivcu9W2Ppe2DbKvmIze05bOtj3YPo9qSC1kJIKL_JIAov8TQKYi368lwAuiY5yduYC6EuOQbipvGcgpue55o5gPEV5Wjh3EVVBRJIRzKYiyPMiL_RSAf94OgrkXZtsN9hsxhAZtVEt0Hx4AUcVkuMUpDEKOqk_IN6GeZj-12h8eh7rkrbG3VSl8xrW2DTaBqzXyIplQdITSJMR0uVde2n9kfrldIyH2g"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-md text-label-md font-semibold">
+                경영 전략
+              </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md">
+                이커머스·플랫폼
+              </span>
+</div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2 mb-space-sm">
+            K-커머스 플랫폼 동남아 신시장 진출 및 현지화 전략
+          </h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-lg">
+            인도네시아·베트남 진출을 위한 풀필먼트 파트너십 구조 설계 및 데이터 드리븐 현지 타깃팅 프로모션 집행 체계 구축.
+          </p>
+</div>
+<div class="pt-space-md border-t-0 bg-surface-container-low p-space-md rounded-lg">
+<span class="font-label-md text-label-md text-on-surface-variant block mb-1">주요 혁신 임팩트</span>
+<div class="font-headline-md text-headline-md text-secondary font-bold mb-space-xs">
+            월 거래액 100억 달성
+          </div>
+<span class="font-body-md text-body-md text-on-surface-variant block mb-space-md">
+            서비스 론칭 6개월 만에 손익분기점 조기 돌파
+          </span>
+<a class="inline-flex items-center gap-space-xs text-primary font-label-lg text-label-lg group-hover:text-secondary transition-colors" href="#">
+<span>케이스 스터디 상세 보기</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2: ESG 지속가능경영 -->
+<div class="case-card flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-[0_1px_3px_0_rgba(15,23,42,0.04)] hover:shadow-[0_10px_25px_-5px_rgba(27,77,62,0.06)] transition-all duration-200 group" data-category="esg">
+<div>
+<div class="relative w-full h-44 rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Architectural modern financial skyscraper in Seoul financial district with subtle green digital overlays representing sustainable green bonds and ESG reporting. Crisp daylight, corporate institutional integrity, minimalist high-end editorial framing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtK-l_KYqb3jrnRMT9o7goDkgJ6SjAd0EnnPKAFhCTSjkzn0LrK3QEf1FYlyNAM1Z163uIrgNqbQEl8ct09U5YiHoaBZcJgtxzUQ55hSnDoyHqRMTwTAHGwL6syAGvcX26qAN8dvD1oeARDE7ODMYW8JwyvQLSsPyLaVxVXMuKm1qX0pevuONVCfWKdueM8cu_juKNC9Cl-IlelOEOETYnd_5hqYSCDGC-BOQaNnFVvr_lhg_QlQU"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-semibold">
+                ESG 지속가능경영
+              </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md">
+                금융·지주
+              </span>
+</div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2 mb-space-sm">
+            대형 금융지주 통합 탄소 배출량 측정 및 지속가능채권 발행
+          </h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-lg">
+            Scope 1·2·3 온실가스 배출량의 과학적 측정 체계 수립 및 글로벌 신용평가기관 적격 승인을 통한 채권 프레임워크 구축.
+          </p>
+</div>
+<div class="pt-space-md bg-surface-container-low p-space-md rounded-lg">
+<span class="font-label-md text-label-md text-on-surface-variant block mb-1">주요 혁신 임팩트</span>
+<div class="font-headline-md text-headline-md text-secondary font-bold mb-space-xs">
+            5,000억 원 녹색채권 성공 발행
+          </div>
+<span class="font-body-md text-body-md text-on-surface-variant block mb-space-md">
+            ESG 글로벌 공시 평가 등급 상향 (A+ 획득)
+          </span>
+<a class="inline-flex items-center gap-space-xs text-primary font-label-lg text-label-lg group-hover:text-secondary transition-colors" href="#">
+<span>케이스 스터디 상세 보기</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3: 디지털 전환 (DX) -->
+<div class="case-card flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-[0_1px_3px_0_rgba(15,23,42,0.04)] hover:shadow-[0_10px_25px_-5px_rgba(27,77,62,0.06)] transition-all duration-200 group" data-category="dx">
+<div>
+<div class="relative w-full h-44 rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Digital factory control room dashboard screens with cloud infrastructure diagrams and production execution telemetry. Industrial precision in muted slate and clean green accents, executive perspective." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIqlB6JFOmWWgU36mWFIqWwDtrJnXbbpASb-L3spe2X9KjSUaiRAbTirItRfXxKRT_j9pXgHfygr4liRYCMLeLP_J9BZ0W4daTcx2xNr6LuivZ8lZBvCeUy8129r9aT7UJ_CSDxzi_47n_nh3N4I4Hb7aJyK3OqxRTw5BzJm7FgdNUC0sxkx51Oz4xWn7Xi3E76Y46-1ZEXQXVwxaWHOZ20qYECrS2VPQqztkXiypn8iZxf5uImrY"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-md text-label-md font-semibold">
+                디지털 전환 (DX)
+              </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md">
+                정밀 제조
+              </span>
+</div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2 mb-space-sm">
+            중견 제조기업 전사 ERP 및 차세대 MES 클라우드 전환
+          </h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-lg">
+            레거시 전산 인프라를 클라우드 네이티브 아키텍처로 전면 교체하여 생산 이력 추적성 및 납기 동기화율 극대화.
+          </p>
+</div>
+<div class="pt-space-md bg-surface-container-low p-space-md rounded-lg">
+<span class="font-label-md text-label-md text-on-surface-variant block mb-1">주요 혁신 임팩트</span>
+<div class="font-headline-md text-headline-md text-secondary font-bold mb-space-xs">
+            납기 준수율 99.2% 기록
+          </div>
+<span class="font-body-md text-body-md text-on-surface-variant block mb-space-md">
+            시스템 장애 대응 시간(MTTR) 78% 단축
+          </span>
+<a class="inline-flex items-center gap-space-xs text-primary font-label-lg text-label-lg group-hover:text-secondary transition-colors" href="#">
+<span>케이스 스터디 상세 보기</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 4: M&A 및 재무 자문 -->
+<div class="case-card flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-[0_1px_3px_0_rgba(15,23,42,0.04)] hover:shadow-[0_10px_25px_-5px_rgba(27,77,62,0.06)] transition-all duration-200 group" data-category="strategy">
+<div>
+<div class="relative w-full h-44 rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Modern biotechnology laboratory research meeting room where corporate partners evaluate digital molecular simulation models. Pristine white medical grade setting with deep green glass partitions, high precision advisory ambiance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCP8yAmtZazL_8WHRmrdtoF56Sou9B8cDt0BK4-qJoTZQA4aYDToCczRs3CuNkpbpWPULcJ2DEonF7OGK8KwE1IHt6KIKjdFoRCWJwp4JUujxOCNpf9CvlaZIf9wakgrLv59PDGciSpgufZzGcMpdbPu1vQG7fvzHCqEX4dE4Lk4yuQWp1PQ8YzUyOIRjKYEm7wTaJp1QpINoBwu6eDz2ldtA2_7ay84ZhSJqho7eeY7liytoyEEQ"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-md text-label-md font-semibold">
+                M&A 자문
+              </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md">
+                바이오·헬스케어
+              </span>
+</div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2 mb-space-sm">
+            바이오 헬스케어 유망 스타트업 시리즈C 실사 및 밸류에이션
+          </h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-lg">
+            신약 파이프라인의 글로벌 특허 가치평가 및 해외 기관투자자 대상 맞춤형 실사 보고서(CDD/FDD) 작성 지원.
+          </p>
+</div>
+<div class="pt-space-md bg-surface-container-low p-space-md rounded-lg">
+<span class="font-label-md text-label-md text-on-surface-variant block mb-1">주요 혁신 임팩트</span>
+<div class="font-headline-md text-headline-md text-secondary font-bold mb-space-xs">
+            800억 투자 유치 성공
+          </div>
+<span class="font-body-md text-body-md text-on-surface-variant block mb-space-md">
+            글로벌 톱티어 VC 컨소시엄 리드 투자 확정
+          </span>
+<a class="inline-flex items-center gap-space-xs text-primary font-label-lg text-label-lg group-hover:text-secondary transition-colors" href="#">
+<span>케이스 스터디 상세 보기</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 5: 브랜드 리포지셔닝 및 D2C -->
+<div class="case-card flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-[0_1px_3px_0_rgba(15,23,42,0.04)] hover:shadow-[0_10px_25px_-5px_rgba(27,77,62,0.06)] transition-all duration-200 group" data-category="strategy">
+<div>
+<div class="relative w-full h-44 rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High-end lifestyle consumer brand flagship store interior with architectural minimalist product displays and digital customer experience touchpoints. Sophisticated retail luxury vibe with emerald marble and warm soft accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI1ua4zTaHrb4lkrUm62PpSYK7a5pot1dfcMJxWpQXe3H-sfflCimsItjGX00e5voHHeD88RqHvjY8WBC9AfLh9gwiH0sfOeNbH6fxltJ1-d1xUUnmCiH6WzHut_4MoUvaPMXFwCeZ0Va43BcGYQaOfIKFWgSFgMt_-rK_nksyCMSXKh02nRxfpt-dsrcRR-M0ohasX9qJplhIT2zN_F4kvAZM5Rmog2veLkxGgPRg6XBl0G9-Sww"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-md text-label-md font-semibold">
+                경영 전략
+              </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md">
+                소비재·유통
+              </span>
+</div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2 mb-space-sm">
+            소비재 전통 브랜드 리포지셔닝 및 D2C 채널 개편
+          </h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-lg">
+            30년 업력 브랜드의 정체성을 재정의하고 자사몰 중심의 옴니채널 고객 여정 재설계 및 CRM 개인화 엔진 구축.
+          </p>
+</div>
+<div class="pt-space-md bg-surface-container-low p-space-md rounded-lg">
+<span class="font-label-md text-label-md text-on-surface-variant block mb-1">주요 혁신 임팩트</span>
+<div class="font-headline-md text-headline-md text-secondary font-bold mb-space-xs">
+            2030 비중 18% → 42% 확대
+          </div>
+<span class="font-body-md text-body-md text-on-surface-variant block mb-space-md">
+            자사몰 직접 매출 전년 대비 +140% 급증
+          </span>
+<a class="inline-flex items-center gap-space-xs text-primary font-label-lg text-label-lg group-hover:text-secondary transition-colors" href="#">
+<span>케이스 스터디 상세 보기</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 6: 공급망 지속가능성 -->
+<div class="case-card flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-[0_1px_3px_0_rgba(15,23,42,0.04)] hover:shadow-[0_10px_25px_-5px_rgba(27,77,62,0.06)] transition-all duration-200 group" data-category="esg">
+<div>
+<div class="relative w-full h-44 rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Automotive engineering assembly facility testing green electric vehicle drive components. Clean, modern industrial setting, European automotive standards inspection setup, pristine photographic composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDePd8vlwE94ihBGAPq_DJswvLiXtVUGMLBinfm0SOc6Stwd4nnbf3B43pgbv6UrHnhqnBQOLXwDyROaMxtHmCpUpXa_FJ9x3dxtHQ92e71daaX3qK8BD2eqlc5fXR4shxE23GNI-9tLPJzBeXTmbCrt98ozakl6Uoxx4xhBkB_I_mwTaibRiGg4JugJiDgtZHN3RvKvyVUuXPsDQvApszmtbSWovBkhFxwgfmv9oHBwpLdMNYoKjE"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-semibold">
+                ESG 지속가능경영
+              </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md">
+                모빌리티·부품
+              </span>
+</div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2 mb-space-sm">
+            글로벌 자동차 부품 협력사 유럽 공급망 실사(CSDDD) 종합 대응
+          </h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-lg">
+            유럽연합 인권·환경 실사 지침에 대응하는 1~3차 협력사 리스크 감사 프로세스 수립 및 탄소 발자국 검인증.
+          </p>
+</div>
+<div class="pt-space-md bg-surface-container-low p-space-md rounded-lg">
+<span class="font-label-md text-label-md text-on-surface-variant block mb-1">주요 혁신 임팩트</span>
+<div class="font-headline-md text-headline-md text-secondary font-bold mb-space-xs">
+            글로벌 완성차 수주 계약 체결
+          </div>
+<span class="font-body-md text-body-md text-on-surface-variant block mb-space-md">
+            독일 3대 프리미엄 완성차사 1차 벤더 자격 획득
+          </span>
+<a class="inline-flex items-center gap-space-xs text-primary font-label-lg text-label-lg group-hover:text-secondary transition-colors" href="#">
+<span>케이스 스터디 상세 보기</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Macro Section: Strategic Impact Methodology & Numbers -->
+<section class="w-full bg-surface-container-low py-space-3xl my-space-lg">
+<div class="max-w-[1360px] mx-auto px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-5">
+<span class="font-label-lg text-label-lg text-secondary uppercase tracking-wider block mb-space-xs">Data-Driven Rigor</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-space-md leading-tight">
+            단순 조언을 넘어 실행과 수치로 귀결되는 컨설팅 프레임워크
+          </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-space-lg">
+            넥서스 컨설팅은 보고서 전달에서 멈추지 않습니다. 현업 PMO 조직과 일체화되어 초기 기획부터 실행 단계의 지표 모니터링까지 직접 책임집니다.
+          </p>
+<div class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>산업군별 도메인 15년 이상 베테랑 파트너 직접 리드</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>자체 개발 전략 성과 지표(N-KPI) 기반 실시간 트래킹</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>프로젝트 종료 후 1년간의 사후 임팩트 감사 무상 제공</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_1px_3px_0_rgba(15,23,42,0.04)] flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-[28px] mb-space-sm">pie_chart</span>
+<h5 class="font-headline-sm text-headline-sm text-on-surface mb-1">고객사 평균 ROI</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">프로젝트 투입 비용 대비 첫 해 산출 비즈니스 성과 배수</p>
+</div>
+<div class="mt-space-lg flex items-baseline gap-space-xs">
+<span class="font-label-stat text-label-stat text-primary">4.2배</span>
+<span class="font-label-md text-label-md text-secondary font-bold">▲ 평균 초과 달성</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_1px_3px_0_rgba(15,23,42,0.04)] flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-[28px] mb-space-sm">handshake</span>
+<h5 class="font-headline-sm text-headline-sm text-on-surface mb-1">재계약 및 후속 프로젝트율</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">넥서스 컨설팅과 연속 2회 이상 함께한 파트너사 비중</p>
+</div>
+<div class="mt-space-lg flex items-baseline gap-space-xs">
+<span class="font-label-stat text-label-stat text-primary">87.5%</span>
+<span class="font-label-md text-label-md text-secondary font-bold">장기 파트너십</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_1px_3px_0_rgba(15,23,42,0.04)] flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-[28px] mb-space-sm">query_stats</span>
+<h5 class="font-headline-sm text-headline-sm text-on-surface mb-1">원천 데이터 분석량</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">고객사별 프로젝트당 평균 분석 정량·정성 데이터셋</p>
+</div>
+<div class="mt-space-lg flex items-baseline gap-space-xs">
+<span class="font-label-stat text-label-stat text-primary">150M+</span>
+<span class="font-label-md text-label-md text-secondary font-bold">Rows</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_1px_3px_0_rgba(15,23,42,0.04)] flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-[28px] mb-space-sm">security_update_good</span>
+<h5 class="font-headline-sm text-headline-sm text-on-surface mb-1">글로벌 규제 준수율</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">EU CSDDD, SEC ESG, IFRS 등 글로벌 스탠다드 대응율</p>
+</div>
+<div class="mt-space-lg flex items-baseline gap-space-xs">
+<span class="font-label-stat text-label-stat text-primary">100%</span>
+<span class="font-label-md text-label-md text-secondary font-bold">감사 무결함</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Macro Section: Executive Bottom Call To Action Banner -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-tablet lg:px-margin-desktop py-space-3xl">
+<div class="relative bg-primary rounded-xl overflow-hidden shadow-xl p-space-xl lg:p-space-3xl text-on-primary">
+<!-- Ambient Mint Glow Accent contained in Card -->
+<div class="absolute -right-24 -bottom-24 w-96 h-96 bg-secondary/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -top-12 w-64 h-64 bg-primary-container/40 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-xl">
+<div class="max-w-2xl">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-lowest/10 text-secondary-fixed font-label-md text-label-md mb-space-sm">
+<span class="material-symbols-outlined text-[15px]">auto_stories</span>
+            Nexus Strategy Casebook 2025
+          </span>
+<h2 class="font-headline-xl text-headline-xl text-on-primary tracking-tight mb-space-sm leading-tight">
+            비슷한 과제로 고민 중이신가요?<br class="hidden sm:inline"/>
+            산업별 상세 성공 사례집을 확인해 보세요.
+          </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim leading-relaxed">
+            비식별화 처리된 50여 개 핵심 프로젝트의 상세 로드맵, 투입 인력 구조, 실제 성과 측정 공식이 담긴 전문 케이스북을 무료로 제공합니다.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md shrink-0">
+<!-- Action 1: Download Casebook -->
+<button class="group inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md bg-secondary-fixed text-on-secondary-fixed font-label-lg text-label-lg rounded-lg hover:bg-surface-container-lowest hover:text-primary transition-all duration-150 shadow-md" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>성공 사례집 PDF 다운로드</span>
+</button>
+<!-- Action 2: Direct Contact Inquiry -->
+<a class="group inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md bg-surface-container-lowest/10 text-on-primary hover:bg-surface-container-lowest/20 font-label-lg text-label-lg rounded-lg transition-all duration-150 backdrop-blur-sm" data-path="contact" href="contact.html">
+<span>유사 프로젝트 컨설팅 문의</span>
+<span class="transition-transform duration-150 group-hover:translate-x-1">→</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Client-side Script for Filter Pill Tabs -->
+<script>
+    (function() {
+      const filterButtons = document.querySelectorAll('#filter-container .filter-tab');
+      const cards = document.querySelectorAll('#cases-grid .case-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Update active state of buttons
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-[0_1px_3px_rgba(15,23,42,0.08)]');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-[0_1px_3px_rgba(15,23,42,0.08)]');
+          btn.classList.remove('text-on-surface-variant');
+
+          const filterVal = btn.getAttribute('data-filter');
+
+          // Filter card visibility
+          cards.forEach(card => {
+            const cat = card.getAttribute('data-category');
+            if (filterVal === 'all') {
+              card.style.display = 'flex';
+            } else if (filterVal === 'industry') {
+              // Industry maps across manufacturing, platform, finance
+              card.style.display = 'flex';
+            } else if (cat === filterVal) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-primary text-on-primary"><div class="max-w-[1360px] mx-auto px-margin-tablet lg:px-margin-desktop pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop mb-space-3xl"><div class="flex flex-col gap-space-md"><a href="index.html" class="flex items-center gap-2.5 shrink-0 group hover:opacity-90 transition-opacity">
+  <img alt="Nexus Consulting Logo" class="h-9 w-9 object-contain rounded-lg shadow-sm border border-secondary-fixed/30 group-hover:scale-105 transition-transform" src="assets/logo.svg"/>
+  <div class="flex flex-col">
+    <span class="font-headline-sm text-lg sm:text-xl font-bold text-on-primary tracking-tight leading-none">넥서스 컨설팅</span>
+    <span class="text-[10px] font-semibold text-secondary-fixed tracking-widest uppercase leading-none mt-1">NEXUS ADVISORY</span>
+  </div>
+</a><p class="font-body-md text-body-md text-primary-fixed-dim leading-relaxed">데이터와 전략으로 기업의 지속 가능한 미래를 완성합니다.</p><div class="pt-space-sm"><span class="inline-block px-space-sm py-space-xs rounded-full bg-tertiary-container text-on-tertiary-container font-label-md text-label-md">Strategic Advisory Firm</span></div></div><div class="flex flex-col gap-space-md"><span class="font-label-lg text-label-lg text-secondary-fixed uppercase tracking-wider">서비스</span><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-primary-fixed-dim"><li><a class="hover:text-on-primary transition-colors" data-path="consulting-services" href="services.html">경영 전략</a></li><li><a class="hover:text-on-primary transition-colors" data-path="consulting-services" href="services.html">디지털 전환(DX)</a></li><li><a class="hover:text-on-primary transition-colors" data-path="consulting-services" href="services.html">ESG / 지속가능경영</a></li><li><a class="hover:text-on-primary transition-colors" data-path="consulting-services" href="services.html">재무 & M&A 자문</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-label-lg text-label-lg text-secondary-fixed uppercase tracking-wider">바로가기</span><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-primary-fixed-dim"><li><a class="hover:text-on-primary transition-colors" data-path="company-overview" href="company.html">회사 소개</a></li><li><a class="hover:text-on-primary transition-colors" data-path="case-studies" href="cases.html">성공 사례</a></li><li><a class="hover:text-on-primary transition-colors" data-path="consultants" href="consultants.html">전문가 네트워크</a></li><li><a class="hover:text-on-primary transition-colors" data-path="insights" href="insights.html">최신 인사이트 리포트</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-label-lg text-label-lg text-secondary-fixed uppercase tracking-wider">문의 및 위치</span><div class="flex flex-col gap-space-xs font-body-md text-body-md text-primary-fixed-dim"><p><span class="text-on-primary font-label-md">대표 연락처:</span> 02-588-3920</p><p><span class="text-on-primary font-label-md">이메일:</span> contact@nexusconsulting.kr</p><p class="mt-space-xs leading-relaxed"><span class="text-on-primary font-label-md">위치:</span> 서울특별시 강남구 테헤란로 425 넥서스타워 18층</p></div></div></div><div class="pt-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-md text-primary-fixed-dim font-body-md text-body-md"><div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs font-label-md text-label-md"><a class="hover:text-on-primary transition-colors" data-path="privacy" href="#">개인정보 처리방침</a><span>|</span><a class="hover:text-on-primary transition-colors" data-path="terms" href="#">이용약관</a><span>|</span><a class="hover:text-on-primary transition-colors" data-path="ethics" href="#">윤리경영 강령</a></div><div class="flex items-center gap-space-md"><span class="font-body-md text-body-md">© 2025 Nexus Consulting Group. All Rights Reserved.</span><div class="flex items-center gap-space-xs font-label-md text-label-md"><button class="text-secondary-fixed hover:text-on-primary font-bold transition-colors" type="button">KR</button><span>/</span><button class="text-primary-fixed-dim hover:text-on-primary transition-colors" type="button">EN</button></div></div></div></div></footer>
+  <script src="main.js"></script>
+</body></html>
